@@ -1,0 +1,52 @@
+## --- [ Секция 1: Результаты сборки ] ---
+[Bb]in/
+[Oo]bj/
+[Log]s/
+# Исключаем исполняемые файлы и библиотеки
+*.exe
+*.dll
+*.pdb
+*.msi
+*.nupkg
+
+## --- [ Секция 2: Настройки Visual Studio ] ---
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+# Файлы тестов и покрытия кода
+TestResults/
+*.sequenced.csv
+*.coverage
+
+## --- [ Секция 3: NuGet пакеты ] ---
+# Пакеты должны восстанавливаться через dotnet restore, а не лежать в гите
+packages/
+*.nuget.props
+*.nuget.targets
+# Если используешь локальный кэш
+node_modules/
+
+## --- [ Секция 4: Другие IDE (Rider, VS Code) ] ---
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln.iml
+# Файлы настроек Rider
+.navigation
+.search
+
+## --- [ Секция 5: Операционная система ] ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# macOS
+.DS_Store
+
+## --- [ Секция 6: Локальные конфиги (если есть) ] ---
+# Если решишь добавить секреты или локальные настройки БД
+appsettings.Local.json
+*.pfx
+*.publishsettings
