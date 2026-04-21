@@ -99,7 +99,7 @@ namespace WellDataImporter.Services
 
             if (!wellsDict.ContainsKey(wellId))
             {
-                wellsDict[wellId] = new Well(wellId, x, 0);
+                wellsDict[wellId] = new Well(wellId, x, y);
                 intervalsMap[wellId] = new List<(int, Interval)>();
             }
 

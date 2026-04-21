@@ -1,5 +1,4 @@
 ﻿using Moq;
-using System.Windows;
 using WellDataImporter.Services;
 
 namespace WellDataImporter.Tests.Services
